@@ -29,15 +29,15 @@ self.addEventListener('install', e => {
     const cacheStatic = caches.open( CACHE_STATIC)
         .then( cacheSta => {
             return cacheSta.addAll([
-                '/index.html',
-                '/css/style.css',
-                '/img/favicon.ico',
-                '/js/app.js',
-                '/img/avatars/spiderman.jpg',
-                '/img/avatars/hulk.jpg',
-                '/img/avatars/ironman.jpg',
-                '/img/avatars/thor.jpg',
-                '/img/avatars/wolverine.jpg',
+                'index.html',
+                'css/style.css',
+                'img/favicon.ico',
+                'js/app.js',
+                'img/avatars/spiderman.jpg',
+                'img/avatars/hulk.jpg',
+                'img/avatars/ironman.jpg',
+                'img/avatars/thor.jpg',
+                'img/avatars/wolverine.jpg',
                 'js/sw-utils.js'
             ]);
         });
@@ -48,8 +48,8 @@ self.addEventListener('install', e => {
                 'https://fonts.googleapis.com/css?family=Quicksand:300,400',
                 'https://fonts.googleapis.com/css?family=Lato:400,300',
                 'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-                '/css/animate.css',
-                '/js/libs/jquery.js'
+                'css/animate.css',
+                'js/libs/jquery.js'
             ]);
         });
     
